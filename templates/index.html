@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Roast Bot 🤖🔥</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input, button { font-size: 18px; padding: 10px; margin-top: 10px; }
+        .container { width: 50%; margin: auto; }
+        .roast { font-size: 22px; color: red; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🔥 AI Roast Bot 🔥</h1>
+    <p>Type something and get roasted! 😆</p>
+    
+    <form method="POST">
+        <input type="text" name="user_input" placeholder="Type your name or anything..." required>
+        <button type="submit">Roast Me!</button>
+    </form>
+
+    {% if roast %}
+        <div class="container">
+            <p class="roast">{{ roast }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
